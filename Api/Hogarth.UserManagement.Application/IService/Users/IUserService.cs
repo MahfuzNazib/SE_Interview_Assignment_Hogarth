@@ -2,10 +2,12 @@
 using Hogarth.UserManagement.Application.DTOs.User;
 using Hogarth.UserManagement.Application.Helpers;
 
-namespace Hogarth.UserManagement.Application.IService.User
+namespace Hogarth.UserManagement.Application.IService.Users
 {
     public interface IUserService
     {
         Task<ApiResponse<IEnumerable<UserDto>>> GetAllUsersAsync(PaginationRequestDto paginationRequestDto);
+
+        Task<ApiResponse<bool>> AddUserAsync(UserDto userDto);
     }
 }

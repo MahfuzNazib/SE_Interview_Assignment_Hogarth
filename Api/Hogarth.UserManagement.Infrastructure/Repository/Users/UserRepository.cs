@@ -43,5 +43,42 @@ namespace Hogarth.UserManagement.Infrastructure.Repository.Users
             return (users, totalCount);
         }
 
+
+        public async Task AddUserAsync(User user)
+        {
+            using var transaction = await _dbContext.Database.BeginTransactionAsync();
+            try
+            {
+                int contactId = await AddUserContactAsync(user.Contact);
+
+                user.ContactId = contactId;
+                _dbContext.Users.Add(user);
+                await _dbContext.SaveChangesAsync();
+
+                await transaction.CommitAsync();
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+                throw new Exception($"An error occurred while adding the user and related data. Error message : {ex.Message}");
+            }
+        }
+
+
+        public async Task<int> AddUserContactAsync(Contact contact)
+        {
+            _dbContext.Contacts.Add(contact);
+            await _dbContext.SaveChangesAsync();
+            return contact.Id;
+        }
+
+
+        public async Task<int> AddUserRoleAsync(Role role)
+        {
+            _dbContext.Roles.Add(role);
+            await _dbContext.SaveChangesAsync();
+            return role.Id;
+        }
+
     }
 }

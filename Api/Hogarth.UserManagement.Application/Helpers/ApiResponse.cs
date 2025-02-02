@@ -4,7 +4,7 @@
     {
         public bool Status { get; set; }
         public string? Message { get; set; }
-        public T Values { get; set; }
-        public PaginationSummary PaginationSummary { get; set; }
+        public T? Values { get; set; }
+        public PaginationSummary? PaginationSummary { get; set; }
     }
 }

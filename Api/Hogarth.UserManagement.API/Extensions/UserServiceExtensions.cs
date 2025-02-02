@@ -1,5 +1,5 @@
-﻿using Hogarth.UserManagement.Application.IService.User;
-using Hogarth.UserManagement.Application.Service.User;
+﻿using Hogarth.UserManagement.Application.IService.Users;
+using Hogarth.UserManagement.Application.Service.Users;
 using Hogarth.UserManagement.Domain.IRepository.Users;
 using Hogarth.UserManagement.Infrastructure.Repository.Users;
 

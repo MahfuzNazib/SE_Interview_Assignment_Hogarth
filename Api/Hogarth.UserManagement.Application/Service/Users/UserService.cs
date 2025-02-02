@@ -2,10 +2,11 @@
 using Hogarth.UserManagement.Application.DTOs.Common;
 using Hogarth.UserManagement.Application.DTOs.User;
 using Hogarth.UserManagement.Application.Helpers;
-using Hogarth.UserManagement.Application.IService.User;
+using Hogarth.UserManagement.Application.IService.Users;
+using Hogarth.UserManagement.Domain.Entities;
 using Hogarth.UserManagement.Domain.IRepository.Users;
 
-namespace Hogarth.UserManagement.Application.Service.User
+namespace Hogarth.UserManagement.Application.Service.Users
 {
     public class UserService : IUserService
     {
@@ -41,6 +42,19 @@ namespace Hogarth.UserManagement.Application.Service.User
                 Message = "User list fetched successfully",
                 Values = userDtos,
                 PaginationSummary = paginationSummary
+            };
+        }
+
+        public async Task<ApiResponse<bool>> AddUserAsync(UserDto userDto)
+        {
+            var user = _mapper.Map<User>(userDto);
+            await _userRepository.AddUserAsync(user);
+
+            return new ApiResponse<bool>
+            {
+                Status = true,
+                Message = "User added successfully",
+                Values = true
             };
         }
     }
