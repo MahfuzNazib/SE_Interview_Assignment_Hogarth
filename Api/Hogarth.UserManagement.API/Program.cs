@@ -1,3 +1,4 @@
+using Hogarth.UserManagement.API.Extensions;
 
 namespace Hogarth.UserManagement.API
 {
@@ -7,12 +8,13 @@ namespace Hogarth.UserManagement.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            #region Dependency Injection Extensions Register
+            builder.Services.AddDatabaseConnectionExtensions(builder.Configuration);
+            #endregion
 
             var app = builder.Build();
 
