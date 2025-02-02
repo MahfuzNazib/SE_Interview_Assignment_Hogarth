@@ -79,5 +79,18 @@ namespace Hogarth.UserManagement.Application.Service.Users
                 Values = userDto
             };
         }
+
+
+        public async Task<ApiResponse<bool>> UpdateUserAsync(UserDto userDto)
+        {
+            var user = _mapper.Map<User>(userDto);
+            await _userRepository.UpdateUserAsync(user);
+
+            return new ApiResponse<bool>
+            {
+                Status = true,
+                Message = "User updated successfully"
+            };
+        }
     }
 }

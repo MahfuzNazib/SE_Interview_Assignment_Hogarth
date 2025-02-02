@@ -11,5 +11,7 @@ namespace Hogarth.UserManagement.Application.IService.Users
         Task<ApiResponse<bool>> AddUserAsync(UserDto userDto);
 
         Task<ApiResponse<UserDto>> GetUserByIdAsync(int id);
+
+        Task<ApiResponse<bool>> UpdateUserAsync(UserDto userDto);
     }
 }

@@ -10,5 +10,7 @@ namespace Hogarth.UserManagement.Domain.IRepository.Users
         Task AddUserAsync(User user);
 
         Task<User> GetUserByIdAsync(int id);
+
+        Task UpdateUserAsync(User user);
     }
 }

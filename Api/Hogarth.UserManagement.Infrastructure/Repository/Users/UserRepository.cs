@@ -80,5 +80,11 @@ namespace Hogarth.UserManagement.Infrastructure.Repository.Users
             .FirstOrDefaultAsync(u => u.Id == id);
         }
 
+        public async Task UpdateUserAsync(User user)
+        {
+            _dbContext.Users.Add(user);
+            await _dbContext.SaveChangesAsync();
+        }
+
     }
 }
