@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1818,6 +1834,20 @@
           }
         }
       },
+      "Hogarth.UserManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Hogarth.UserManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hogarth.UserManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hogarth.UserManagement.Application.dll": {}
+        }
+      },
       "Hogarth.UserManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1848,6 +1878,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -5460,6 +5505,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Hogarth.UserManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../Hogarth.UserManagement.Application/Hogarth.UserManagement.Application.csproj",
+      "msbuildProject": "../Hogarth.UserManagement.Application/Hogarth.UserManagement.Application.csproj"
+    },
     "Hogarth.UserManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../Hogarth.UserManagement.Domain/Hogarth.UserManagement.Domain.csproj",
@@ -5473,6 +5523,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 13.0.1",
+      "Hogarth.UserManagement.Application >= 1.0.0",
       "Hogarth.UserManagement.Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.1",
       "Microsoft.Extensions.Configuration >= 9.0.1",
@@ -5508,6 +5560,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj": {
+              "projectPath": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj"
+            },
             "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Infrastructure\\Hogarth.UserManagement.Infrastructure.csproj": {
               "projectPath": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Infrastructure\\Hogarth.UserManagement.Infrastructure.csproj"
             }
@@ -5529,6 +5584,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

@@ -1,4 +1,5 @@
 using Hogarth.UserManagement.API.Extensions;
+using Hogarth.UserManagement.Application.Mapping;
 
 namespace Hogarth.UserManagement.API
 {
@@ -14,6 +15,8 @@ namespace Hogarth.UserManagement.API
 
             #region Dependency Injection Extensions Register
             builder.Services.AddDatabaseConnectionExtensions(builder.Configuration);
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
+            builder.Services.AddUserServiceExtensions();
             #endregion
 
             var app = builder.Build();
