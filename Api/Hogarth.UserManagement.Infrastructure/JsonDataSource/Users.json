@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "active": true,
+      "company": "SoftwarePeople",
+      "sex": "M",
+      "contactId": 1,
+      "roleId": 1,
+      "contact": {
+        "id": 1,
+        "phone": "+41023658",
+        "address": "Banani",
+        "city": "Dhaka",
+        "country": "Bangladesh"
+      },
+      "role": {
+        "id": 1,
+        "name": "Admin"
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "phone": "+41023658",
+      "address": "Banani",
+      "city": "Dhaka",
+      "country": "Bangladesh"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "Manager"
+    }
+  ]
+}
