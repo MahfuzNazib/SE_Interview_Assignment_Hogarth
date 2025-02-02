@@ -72,12 +72,12 @@ namespace Hogarth.UserManagement.Infrastructure.Repository.Users
             return contact.Id;
         }
 
-
-        public async Task<int> AddUserRoleAsync(Role role)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            _dbContext.Roles.Add(role);
-            await _dbContext.SaveChangesAsync();
-            return role.Id;
+            return await _dbContext.Users
+            .Include(u => u.Contact)
+            .Include(u => u.Role)
+            .FirstOrDefaultAsync(u => u.Id == id);
         }
 
     }

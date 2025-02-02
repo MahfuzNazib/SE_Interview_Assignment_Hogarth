@@ -9,5 +9,7 @@ namespace Hogarth.UserManagement.Application.IService.Users
         Task<ApiResponse<IEnumerable<UserDto>>> GetAllUsersAsync(PaginationRequestDto paginationRequestDto);
 
         Task<ApiResponse<bool>> AddUserAsync(UserDto userDto);
+
+        Task<ApiResponse<UserDto>> GetUserByIdAsync(int id);
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hogarth.UserManagement.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a427b538e8fd9ed607c1716122f62d55301fdf34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85363d406b301ca961fad71063ca0c9f7e479eb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hogarth.UserManagement.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hogarth.UserManagement.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

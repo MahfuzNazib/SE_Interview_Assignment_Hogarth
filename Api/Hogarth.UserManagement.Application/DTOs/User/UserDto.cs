@@ -11,5 +11,6 @@
         public int RoleId { get; set; }
 
         public ContactDto Contact { get; set; }
+        public RoleDto Role { get; set; }
     }
 }

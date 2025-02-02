@@ -31,5 +31,16 @@ namespace Hogarth.UserManagement.API.Controllers.User
             var response = await _userService.AddUserAsync(userDto);    
             return Ok(response);
         }
+
+        [HttpGet("GetUserById/{id}")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            var response = await _userService.GetUserByIdAsync(id);
+
+            if (!response.Status)
+                return NotFound(response);
+
+            return Ok(response);
+        }
     }
 }

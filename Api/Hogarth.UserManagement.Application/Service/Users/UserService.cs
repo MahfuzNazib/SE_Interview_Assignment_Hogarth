@@ -57,5 +57,27 @@ namespace Hogarth.UserManagement.Application.Service.Users
                 Values = true
             };
         }
+
+
+        public async Task<ApiResponse<UserDto>> GetUserByIdAsync(int id)
+        {
+            var user = await _userRepository.GetUserByIdAsync(id);
+            if (user == null)
+            {
+                return new ApiResponse<UserDto>
+                {
+                    Status = false,
+                    Message = "User not found"
+                };
+            }
+
+            var userDto = _mapper.Map<UserDto>(user);
+            return new ApiResponse<UserDto>
+            {
+                Status = true,
+                Message = "User data fetched successfully",
+                Values = userDto
+            };
+        }
     }
 }
