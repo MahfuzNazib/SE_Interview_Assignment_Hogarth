@@ -18,7 +18,7 @@ namespace Hogarth.UserManagement.API
             #region Dependency Injection Extensions Register
             builder.Services.AddDatabaseConnectionExtensions(builder.Configuration);
             builder.Services.AddAutoMapper(typeof(MappingProfile));
-            builder.Services.AddUserServiceExtensions();
+            builder.Services.AddUserServiceExtensions(builder.Configuration);
             #endregion
 
             var app = builder.Build();

@@ -7,10 +7,21 @@ namespace Hogarth.UserManagement.API.Extensions
 {
     public static class UserServiceExtensions
     {
-        public static IServiceCollection AddUserServiceExtensions(this IServiceCollection services)
+        public static IServiceCollection AddUserServiceExtensions(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IUserRepository, UserRepository>();
+
+            var dataSource = configuration["DataSource"];
+
+            if (dataSource == "MSSQL")
+            {
+                services.AddScoped<IUserRepository, UserRepository>();
+            }
+            if (dataSource == "JSON")
+            {
+                services.AddScoped<IUserRepository, UserJsonRepository>(provider =>
+                    new UserJsonRepository(configuration));
+            }
 
             return services;
         }
