@@ -26,7 +26,7 @@ namespace Hogarth.UserManagement.API.Controllers.User
 
 
         [HttpPost("AddUser")]
-        public async Task<IActionResult> AddUser(UserDto userDto)
+        public async Task<IActionResult> AddUser([FromBody] UserDto userDto)
         {
             var response = await _userService.AddUserAsync(userDto);    
             return Ok(response);
@@ -40,6 +40,13 @@ namespace Hogarth.UserManagement.API.Controllers.User
             if (!response.Status)
                 return NotFound(response);
 
+            return Ok(response);
+        }
+
+        [HttpPut("UpdateUser")]
+        public async Task<IActionResult> UpdateUser([FromBody] UserDto userDto)
+        {
+            var response = await _userService.UpdateUserAsync(userDto);
             return Ok(response);
         }
     }

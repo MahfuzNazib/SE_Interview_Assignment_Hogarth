@@ -89,7 +89,8 @@ namespace Hogarth.UserManagement.Application.Service.Users
             return new ApiResponse<bool>
             {
                 Status = true,
-                Message = "User updated successfully"
+                Message = "User updated successfully",
+                Values = true
             };
         }
     }

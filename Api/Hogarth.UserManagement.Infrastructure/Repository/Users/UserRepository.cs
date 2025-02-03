@@ -82,8 +82,44 @@ namespace Hogarth.UserManagement.Infrastructure.Repository.Users
 
         public async Task UpdateUserAsync(User user)
         {
-            _dbContext.Users.Add(user);
-            await _dbContext.SaveChangesAsync();
+            using var transaction = await _dbContext.Database.BeginTransactionAsync();
+            try
+            {
+                if (user.Contact != null)
+                {
+                    var existingContact = await _dbContext.Contacts.FindAsync(user.Contact.Id);
+                    if (existingContact != null)
+                    {
+                        _dbContext.Entry(existingContact).CurrentValues.SetValues(user.Contact);
+                    }
+                    else
+                    {
+                        _dbContext.Contacts.Add(user.Contact);
+                    }
+                }
+
+                var existingUser = await _dbContext.Users
+                    .Include(u => u.Contact) 
+                    .FirstOrDefaultAsync(u => u.Id == user.Id);
+
+                if (existingUser != null)
+                {
+                    _dbContext.Entry(existingUser).CurrentValues.SetValues(user);
+
+                    if (user.Contact != null)
+                    {
+                        existingUser.ContactId = user.Contact.Id;
+                    }
+                }
+
+                await _dbContext.SaveChangesAsync();
+                await transaction.CommitAsync();
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+                throw new Exception($"An error occurred while updating the user and related data. Error message: {ex.Message}");
+            }
         }
 
     }
