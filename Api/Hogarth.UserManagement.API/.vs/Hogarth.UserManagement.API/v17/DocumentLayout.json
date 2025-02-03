@@ -3,34 +3,20 @@
   "WorkspaceRootPath": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.application\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC2AAB2-0F50-49F2-BE1D-EBCB3D7B490B}|..\\Hogarth.UserManagement.Infrastructure\\Hogarth.UserManagement.Infrastructure.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.infrastructure\\repository\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1C12B0E-B362-4CF4-95A6-9FD456A26905}|..\\Hogarth.UserManagement.Domain\\Hogarth.UserManagement.Domain.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.domain\\irepository\\users\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.application\\iservice\\users\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\extensions\\userserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:extensions\\userserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\extensions\\serilogextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:extensions\\serilogextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.application\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\appexceptionhandler\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:appexceptionhandler\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,115 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T15:51:54.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:18:44.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserServiceExtensions.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Extensions\\UserServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\UserServiceExtensions.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Extensions\\UserServiceExtensions.cs",
-              "RelativeToolTip": "Extensions\\UserServiceExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:14:44.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Controllers\\User\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\User\\UserController.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Controllers\\User\\UserController.cs",
-              "RelativeToolTip": "Controllers\\User\\UserController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwC8AAAAJAAAA",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Controllers\\User\\UserController.cs*",
+              "RelativeToolTip": "Controllers\\User\\UserController.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:11:54.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:10:41.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\Service\\Users\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\Service\\Users\\UserService.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\Service\\Users\\UserService.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\Service\\Users\\UserService.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAmwHEAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:59:57.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\IService\\Users\\IUserService.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\IService\\Users\\IUserService.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Application\\IService\\Users\\IUserService.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\IService\\Users\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:59:24.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAmwIEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:57:33.771Z",
+              "WhenOpened": "2025-02-03T01:45:15.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Domain\\IRepository\\Users\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Domain\\IRepository\\Users\\IUserRepository.cs",
-              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Domain\\IRepository\\Users\\IUserRepository.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Domain\\IRepository\\Users\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAAAAAA",
+              "Title": "SerilogExtensions.cs",
+              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Extensions\\SerilogExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\SerilogExtensions.cs",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Extensions\\SerilogExtensions.cs",
+              "RelativeToolTip": "Extensions\\SerilogExtensions.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwA4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:40:06.685Z",
+              "WhenOpened": "2025-02-03T01:42:55.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAxwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T01:33:33.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\AppExceptionHandler\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "AppExceptionHandler\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\AppExceptionHandler\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "AppExceptionHandler\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T01:28:20.62Z",
               "EditorCaption": ""
             }
           ]

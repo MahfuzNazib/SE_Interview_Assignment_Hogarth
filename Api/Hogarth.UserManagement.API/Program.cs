@@ -1,3 +1,4 @@
+using Hogarth.UserManagement.API.AppExceptionHandler;
 using Hogarth.UserManagement.API.Extensions;
 using Hogarth.UserManagement.Application.Mapping;
 
@@ -8,6 +9,7 @@ namespace Hogarth.UserManagement.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Host.AddSerilogLogging();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -27,12 +29,9 @@ namespace Hogarth.UserManagement.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
 
             app.Run();
