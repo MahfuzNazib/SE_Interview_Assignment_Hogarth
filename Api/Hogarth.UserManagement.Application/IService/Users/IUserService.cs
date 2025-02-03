@@ -13,5 +13,7 @@ namespace Hogarth.UserManagement.Application.IService.Users
         Task<ApiResponse<UserDto>> GetUserByIdAsync(int id);
 
         Task<ApiResponse<bool>> UpdateUserAsync(UserDto userDto);
+
+        Task<ApiResponse<bool>> DeleteUserAsync(int id);
     }
 }

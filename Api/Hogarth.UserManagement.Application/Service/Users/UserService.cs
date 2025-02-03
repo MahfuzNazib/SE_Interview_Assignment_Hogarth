@@ -93,5 +93,30 @@ namespace Hogarth.UserManagement.Application.Service.Users
                 Values = true
             };
         }
+
+
+        public async Task<ApiResponse<bool>> DeleteUserAsync(int id)
+        {
+            bool isDeleted = await _userRepository.DeleteUserAsync(id);
+
+            if (isDeleted)
+            {
+                return new ApiResponse<bool>
+                {
+                    Status = true,
+                    Message = "User deleted successfully",
+                    Values = true
+                };
+            }
+            else
+            {
+                return new ApiResponse<bool>
+                {
+                    Status = false,
+                    Message = "User not found",
+                    Values = false
+                };
+            }
+        }
     }
 }

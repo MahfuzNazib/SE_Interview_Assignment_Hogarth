@@ -12,5 +12,7 @@ namespace Hogarth.UserManagement.Domain.IRepository.Users
         Task<User> GetUserByIdAsync(int id);
 
         Task UpdateUserAsync(User user);
+
+        Task<bool> DeleteUserAsync(int id);
     }
 }

@@ -49,5 +49,13 @@ namespace Hogarth.UserManagement.API.Controllers.User
             var response = await _userService.UpdateUserAsync(userDto);
             return Ok(response);
         }
+
+
+        [HttpDelete("DeleteUser/{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var response = await _userService.DeleteUserAsync(id);
+            return Ok(response);
+        }
     }
 }

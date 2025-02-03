@@ -80,6 +80,7 @@ namespace Hogarth.UserManagement.Infrastructure.Repository.Users
             .FirstOrDefaultAsync(u => u.Id == id);
         }
 
+
         public async Task UpdateUserAsync(User user)
         {
             using var transaction = await _dbContext.Database.BeginTransactionAsync();
@@ -120,6 +121,21 @@ namespace Hogarth.UserManagement.Infrastructure.Repository.Users
                 await transaction.RollbackAsync();
                 throw new Exception($"An error occurred while updating the user and related data. Error message: {ex.Message}");
             }
+        }
+
+
+        public async Task<bool> DeleteUserAsync(int id)
+        {
+            var user = await _dbContext.Users.FindAsync(id);
+            
+            if (user != null )
+            {
+                _dbContext.Users.Remove(user);
+                await _dbContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
     }
