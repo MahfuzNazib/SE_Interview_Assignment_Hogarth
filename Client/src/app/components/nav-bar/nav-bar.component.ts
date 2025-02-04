@@ -1,17 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { DatasourceService } from '../../core/services/header_datasource/datasource.service';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
-export class NavBarComponent {
-  selectedDatabase: string = 'MSSQL'; 
+export class NavBarComponent implements OnInit {
+  selectedDatabase: string = 'MSSQL';
 
-  constructor(private dataSourceService: DatasourceService){}
+  constructor(private dataSourceService: DatasourceService) {}
+
+  ngOnInit(): void {
+    this.selectedDatabase = this.dataSourceService.getDataSourceType();
+  }
 
   onDataSourceChange(event: Event): void {
     const target = event.target as HTMLSelectElement;

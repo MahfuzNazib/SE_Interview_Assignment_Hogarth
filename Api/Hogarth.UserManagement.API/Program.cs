@@ -18,6 +18,7 @@ namespace Hogarth.UserManagement.API
             #region Dependency Injection Extensions Register
             builder.Services.AddDatabaseConnectionExtensions(builder.Configuration);
             builder.Services.AddAutoMapper(typeof(MappingProfile));
+            builder.Services.AddHttpContextAccessor();
             builder.Services.AddUserServiceExtensions(builder.Configuration);
             builder.Services.AddCorsPolicyServiceExtensions("corspolicy", "http://localhost:4200");
             #endregion

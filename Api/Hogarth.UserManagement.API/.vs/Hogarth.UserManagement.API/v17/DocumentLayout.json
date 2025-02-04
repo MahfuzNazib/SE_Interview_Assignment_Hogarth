@@ -3,16 +3,27 @@
   "WorkspaceRootPath": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\extensions\\userserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:extensions\\userserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7FC2AAB2-0F50-49F2-BE1D-EBCB3D7B490B}|..\\Hogarth.UserManagement.Infrastructure\\Hogarth.UserManagement.Infrastructure.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.infrastructure\\repository\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\helpers\\headerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:helpers\\headerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|d:\\coding interview\\hogarth.usermanagement\\api\\hogarth.usermanagement.api\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +41,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "HeaderHelper.cs",
+              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Helpers\\HeaderHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\HeaderHelper.cs",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Helpers\\HeaderHelper.cs",
+              "RelativeToolTip": "Helpers\\HeaderHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:31:18.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:15:54.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
+              "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
+              "RelativeToolTip": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAAwHoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:07:48.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Controllers\\User\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\User\\UserController.cs",
               "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Controllers\\User\\UserController.cs",
               "RelativeToolTip": "Controllers\\User\\UserController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T15:35:31.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserServiceExtensions.cs",
               "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Extensions\\UserServiceExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\UserServiceExtensions.cs",
               "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\Extensions\\UserServiceExtensions.cs",
               "RelativeToolTip": "Extensions\\UserServiceExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T00:17:42.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Coding Interview\\Hogarth.UserManagement\\Api\\Hogarth.UserManagement.API\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-04T00:01:07.75Z"
+              "WhenOpened": "2025-02-04T00:01:07.75Z",
+              "EditorCaption": ""
             }
           ]
         }

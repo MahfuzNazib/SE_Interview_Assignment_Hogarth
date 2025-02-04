@@ -33,13 +33,14 @@
           >Database:</label
         >
         <select
-        id="databaseSelect"
-        class="form-control form-control-sm w-auto"
-        (change)="onDataSourceChange($event)"
-      >
-        <option value="MSSQL">MSSQL</option>
-        <option value="JSON">JSON</option>
-      </select>
+          id="databaseSelect"
+          class="form-control form-control-sm w-auto"
+          (change)="onDataSourceChange($event)"
+          [value]="selectedDatabase"
+        >
+          <option value="MSSQL">MSSQL</option>
+          <option value="JSON">JSON</option>
+        </select>
       </div>
     </div>
   </nav>
