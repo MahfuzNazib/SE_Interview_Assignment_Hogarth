@@ -1,7 +1,7 @@
 <div>
   <div class="row">
     <div class="col-md-8">
-      <button class="btn btn-primary mb-2">Add User</button>
+      <button class="btn btn-primary mb-2" (click)="navigateToAddUser()">Add User</button>
     </div>
 
     <div class="col-md-4">
@@ -36,7 +36,7 @@
         <td>ABC</td>
         <td>Active</td>
         <td>
-          <button class="btn btn-info btn-sm">Details</button>
+          <button class="btn btn-info btn-sm" (click)="navigateToUserDetails(1)">Details</button>
         </td>
       </tr>
     </tbody>
