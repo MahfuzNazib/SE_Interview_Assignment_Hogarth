@@ -1,43 +1,57 @@
 <div>
   <div class="row">
     <div class="col-md-8">
-      <button class="btn btn-primary mb-2" (click)="navigateToAddUser()">Add User</button>
+      <button class="btn btn-primary mb-2" (click)="navigateToAddUser()">
+        Add User
+      </button>
     </div>
 
     <div class="col-md-4">
-      <input
-        type="text"
-        name=""
-        class="form-control"
-        placeholder="Search User..."
-        id=""
-      />
+      <input type="text" class="form-control" placeholder="Search User..." />
     </div>
   </div>
+
   <table class="table table-bordered table-striped">
     <thead>
-      <th>Sl No</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Sex</th>
-      <th>Contact No</th>
-      <th>Company</th>
-      <th>Status</th>
-      <th>Action</th>
+      <tr>
+        <th>Sl No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Sex</th>
+        <th>Contact No</th>
+        <th>Company</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
     </thead>
 
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>M</td>
-        <td>1234567890</td>
-        <td>ABC</td>
-        <td>Active</td>
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName || "-" }}</td>
+        <td>{{ user.sex }}</td>
+        <td>{{ user.contact.phone || "N/A" }}</td>
+        <td>{{ user.company }}</td>
         <td>
-          <button class="btn btn-info btn-sm" (click)="navigateToUserDetails(1)">Details</button>
+          <span
+            [class.text-success]="user.active"
+            [class.text-danger]="!user.active"
+          >
+            {{ user.active ? "Active" : "Inactive" }}
+          </span>
         </td>
+        <td>
+          <button
+            class="btn btn-info btn-sm"
+            (click)="navigateToUserDetails(user.id)"
+          >
+            Details
+          </button>
+        </td>
+      </tr>
+      <tr *ngIf="users.length === 0">
+        <td colspan="8" class="text-center">No users found</td>
       </tr>
     </tbody>
   </table>

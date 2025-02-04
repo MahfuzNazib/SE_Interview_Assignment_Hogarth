@@ -1,8 +1,7 @@
 export interface PaginationRequest {
-    page: number;
-    perPage: number;
+    pageNumber: number;
+    pageSize: number;
+    searchValue?: string;
     orderBy?: string;
-    ascending?: boolean;
-    searchParam?: string;
+    isAscending?: boolean;
   }
-  

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../../core/services/user_service/user.service';
@@ -8,7 +9,7 @@ import { ApiResponse } from '../../../core/models/api-response.model';
 @Component({
   selector: 'app-user-list',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css'
 })
@@ -18,11 +19,11 @@ export class UserListComponent implements OnInit {
   // Variable Declaration
   users: User[] = [];
   paginationRequest: PaginationRequest = {
-    page: 1,
-    perPage: 10,
+    pageNumber: 1,
+    pageSize: 10,
+    searchValue: '',
     orderBy: 'Id',
-    ascending: true,
-    searchParam: ""
+    isAscending: true,
   };
 
   navigateToAddUser() {
@@ -41,7 +42,11 @@ export class UserListComponent implements OnInit {
   getAllUsers(): void {
     this.userService.GetUsers(this.paginationRequest).subscribe(
       (response: ApiResponse<User[]>) => {
-        console.log("Get User", response);
+        if (response.status && response.values) {
+          this.users = response.values;
+        } else {
+          console.error("Error fetching users", response.message);
+        }
       },
       (error) => {
         console.error("Error fetching users", error);

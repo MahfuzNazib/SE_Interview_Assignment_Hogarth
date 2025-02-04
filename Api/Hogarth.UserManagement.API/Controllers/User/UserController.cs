@@ -18,7 +18,7 @@ namespace Hogarth.UserManagement.API.Controllers.User
         }
 
         [HttpPost("GetUsers")]
-        public async Task<IActionResult> GetUsers(PaginationRequestDto paginationRequestDto)
+        public async Task<IActionResult> GetUsers([FromBody] PaginationRequestDto paginationRequestDto)
         {
             var response = await _userService.GetAllUsersAsync(paginationRequestDto);
             return Ok(response);
