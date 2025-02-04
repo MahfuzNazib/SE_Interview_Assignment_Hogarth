@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-user',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './add-user.component.css'
 })
 export class AddUserComponent {
+  constructor(private router: Router) {}
 
+  navigateToUserList() {
+    this.router.navigate(['/user']);
+  }
 }
