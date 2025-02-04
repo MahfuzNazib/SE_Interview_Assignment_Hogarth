@@ -19,6 +19,7 @@ namespace Hogarth.UserManagement.API
             builder.Services.AddDatabaseConnectionExtensions(builder.Configuration);
             builder.Services.AddAutoMapper(typeof(MappingProfile));
             builder.Services.AddUserServiceExtensions(builder.Configuration);
+            builder.Services.AddCorsPolicyServiceExtensions("corspolicy", "http://localhost:4200");
             #endregion
 
             var app = builder.Build();
@@ -29,6 +30,7 @@ namespace Hogarth.UserManagement.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("corspolicy");
             app.UseMiddleware<ExceptionHandlingMiddleware>();
             app.UseHttpsRedirection();
             app.UseAuthorization();

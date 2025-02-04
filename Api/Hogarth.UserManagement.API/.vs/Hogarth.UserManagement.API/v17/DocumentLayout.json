@@ -3,13 +3,28 @@
   "WorkspaceRootPath": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FC2AAB2-0F50-49F2-BE1D-EBCB3D7B490B}|..\\Hogarth.UserManagement.Infrastructure\\Hogarth.UserManagement.Infrastructure.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.infrastructure\\repository\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FC2AAB2-0F50-49F2-BE1D-EBCB3D7B490B}|..\\Hogarth.UserManagement.Infrastructure\\Hogarth.UserManagement.Infrastructure.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.infrastructure\\repository\\users\\userjsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.api\\extensions\\corspolicyextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:extensions\\corspolicyextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68D7A7AD-994A-4866-90C0-204CC1094DA5}|Hogarth.UserManagement.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.application\\dtos\\user\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.application\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.application\\dtos\\user\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12DEB7B-93F4-413E-81AF-12CD1B8034BB}|..\\Hogarth.UserManagement.Application\\Hogarth.UserManagement.Application.csproj|e:\\testapp\\se_interview_assignment_hogarth\\api\\hogarth.usermanagement.application\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,45 +34,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CorsPolicyExtensions.cs",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\Extensions\\CorsPolicyExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\CorsPolicyExtensions.cs",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\Extensions\\CorsPolicyExtensions.cs",
+              "RelativeToolTip": "Extensions\\CorsPolicyExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T05:23:25.742Z",
+              "WhenOpened": "2025-02-04T11:43:39.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserJsonRepository.cs",
-              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserJsonRepository.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserJsonRepository.cs",
-              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserJsonRepository.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Infrastructure\\Repository\\Users\\UserJsonRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBEAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T05:23:24.711Z",
+              "WhenOpened": "2025-02-04T11:41:47.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\Mapping\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\Mapping\\MappingProfile.cs",
-              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\Mapping\\MappingProfile.cs",
-              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\Mapping\\MappingProfile.cs",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-04T11:38:40.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
+              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\Helpers\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T05:23:14.088Z",
+              "WhenOpened": "2025-02-04T10:35:09.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactDto.cs",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\ContactDto.cs",
+              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\ContactDto.cs",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\ContactDto.cs",
+              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\ContactDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T10:26:08.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoleDto.cs",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\RoleDto.cs",
+              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\RoleDto.cs",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\RoleDto.cs",
+              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\RoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T10:26:01.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
+              "RelativeDocumentMoniker": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
+              "ToolTip": "E:\\TestApp\\SE_Interview_Assignment_Hogarth\\Api\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
+              "RelativeToolTip": "..\\Hogarth.UserManagement.Application\\DTOs\\User\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T10:25:52.676Z",
               "EditorCaption": ""
             }
           ]
