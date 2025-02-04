@@ -29,7 +29,7 @@ export class UserService {
 
 
   GetUsers(paginationObj: PaginationRequest): Observable<ApiResponse<User[]>> {
-    const headers = this.getHeaders(); 
+    const headers = this.getHeaders();
 
     return this.http
       .post<ApiResponse<User[]>>(
@@ -40,7 +40,22 @@ export class UserService {
       .pipe(
         catchError((error) => {
           console.error('Error fetching users', error);
-          throw error; 
+          throw error;
+        })
+      );
+  }
+
+  AddUser(user: User): Observable<ApiResponse<User>> {
+    const headers = this.getHeaders();
+
+    return this.http
+      .post<ApiResponse<User>>(`${this.baseApiUrl}/User/AddUser`, user, {
+        headers,
+      })
+      .pipe(
+        catchError((error) => {
+          console.error('Error adding user', error);
+          throw error;
         })
       );
   }

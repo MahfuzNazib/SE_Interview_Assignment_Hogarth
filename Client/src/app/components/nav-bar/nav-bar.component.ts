@@ -22,5 +22,6 @@ export class NavBarComponent implements OnInit {
     const target = event.target as HTMLSelectElement;
     this.selectedDatabase = target.value;
     this.dataSourceService.setDataSourceType(target.value);
+    window.location.reload();
   }
 }
