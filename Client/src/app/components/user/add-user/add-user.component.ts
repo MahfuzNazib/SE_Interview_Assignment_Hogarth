@@ -8,7 +8,7 @@ import { Contact } from '../../../core/models/contact.model';
 @Component({
   selector: 'app-add-user',
   standalone: true,
-  imports: [FormsModule], // Import FormsModule for two-way binding
+  imports: [FormsModule],
   templateUrl: './add-user.component.html',
   styleUrl: './add-user.component.css',
 })

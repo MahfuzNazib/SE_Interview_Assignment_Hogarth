@@ -59,4 +59,36 @@ export class UserService {
         })
       );
   }
+
+
+  GetUserById(id: number): Observable<ApiResponse<User>> {
+    const headers = this.getHeaders();
+
+    return this.http
+      .get<ApiResponse<User>>(`${this.baseApiUrl}/User/GetUserById/${id}`, {
+        headers,
+      })
+      .pipe(
+        catchError((error) => {
+          console.error('Error fetching user details', error);
+          throw error;
+        })
+      );
+  }
+
+
+  UpdateUser(user: User): Observable<ApiResponse<User>> {
+    const headers = this.getHeaders();
+
+    return this.http
+      .put<ApiResponse<User>>(`${this.baseApiUrl}/User/UpdateUser`, user, {
+        headers,
+      })
+      .pipe(
+        catchError((error) => {
+          console.error('Error updating user', error);
+          throw error;
+        })
+      );
+  }
 }
