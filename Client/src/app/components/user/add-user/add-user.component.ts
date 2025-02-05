@@ -52,6 +52,12 @@ export class AddUserComponent implements OnInit {
       SwalAlertComponent.showAlert("Warning", "Phone number is required", "warning");
       return false;
     }
+
+    if (this.user.contact.phone.length > 11) {
+      SwalAlertComponent.showAlert("Warning", "Phone number cannot exceed 11 digit", "warning");
+      return false;
+    }
+
     if (this.user.contact.address === '') {
       SwalAlertComponent.showAlert("Warning", "Address is required", "warning");
       return false;
