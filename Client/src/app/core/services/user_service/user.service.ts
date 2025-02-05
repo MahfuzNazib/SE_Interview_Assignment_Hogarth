@@ -91,4 +91,20 @@ export class UserService {
         })
       );
   }
+
+
+  DeleteUser(id: number): Observable<ApiResponse<User>> {
+    const headers = this.getHeaders();
+
+    return this.http
+      .delete<ApiResponse<User>>(`${this.baseApiUrl}/User/DeleteUser/${id}`, {
+        headers,
+      })
+      .pipe(
+        catchError((error) => {
+          console.error('Error deleting user', error);
+          throw error;
+        })
+      );
+  }
 }

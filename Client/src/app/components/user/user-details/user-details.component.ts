@@ -82,7 +82,22 @@ export class UserDetailsComponent implements OnInit {
     );
   }
 
-  deleteUser() {
-
+  deleteUser(): void {
+  if (confirm('Are you sure you want to delete this user?')) {
+    this.userService.DeleteUser(this.user.id).subscribe(
+      (response) => {
+        if (response.status) {
+          console.log('User deleted successfully');
+          this.navigateToUserList();
+        } else {
+          console.error('Error deleting user:', response.message);
+        }
+      },
+      (error) => {
+        console.error('Error deleting user:', error);
+      }
+    );
   }
+}
+
 }
