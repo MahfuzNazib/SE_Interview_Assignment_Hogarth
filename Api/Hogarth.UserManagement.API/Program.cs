@@ -21,6 +21,7 @@ namespace Hogarth.UserManagement.API
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddUserServiceExtensions(builder.Configuration);
             builder.Services.AddCorsPolicyServiceExtensions("corspolicy", "http://localhost:4200");
+            builder.Services.AddFluentValidatorServiceExtension();
             #endregion
 
             var app = builder.Build();
