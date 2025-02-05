@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../../../core/services/user_service/user.service';
 import { ApiResponse } from '../../../core/models/api-response.model';
 import { FormsModule } from '@angular/forms';
+import { SwalAlertComponent } from '../../swal-alert/swal-alert.component';
 
 @Component({
   selector: 'app-user-details',
@@ -66,11 +67,48 @@ export class UserDetailsComponent implements OnInit {
     );
   }
 
+  updateUserValidation() {
+    if (this.user.firstName === '') {
+      SwalAlertComponent.showAlert("Warning", "First name is required", "warning");
+      return false;
+    }
+    if (this.user.lastName === '') {
+      SwalAlertComponent.showAlert("Warning", "Last name is required", "warning");
+      return false;
+    }
+    if (this.user.contact.phone === '') {
+      SwalAlertComponent.showAlert("Warning", "Phone number is required", "warning");
+      return false;
+    }
+    if (this.user.contact.address === '') {
+      SwalAlertComponent.showAlert("Warning", "Address is required", "warning");
+      return false;
+    }
+    if (this.user.contact.city === '') {
+      SwalAlertComponent.showAlert("Warning", "City is required", "warning");
+      return false;
+    }
+    if (this.user.contact.country === '') {
+      SwalAlertComponent.showAlert("Warning", "Country is required", "warning");
+      return false;
+    }
+    if (this.user.roleId === 0) {
+      SwalAlertComponent.showAlert("Warning", "Role is required", "warning");
+      return false;
+    }
+    if (this.user.sex === '') {
+      SwalAlertComponent.showAlert("Warning", "Sex is required", "warning");
+      return false;
+    }
+    this.onSubmitUpdateUser();
+    return true;
+  }
+
   onSubmitUpdateUser() {
     this.userService.UpdateUser(this.user).subscribe(
       (response) => {
         if (response.status) {
-          console.log('User updated successfully');
+          SwalAlertComponent.showAlert("Success", "User updated successfully", "success");
           this.navigateToUserList();
         } else {
           console.error('Error updating user:', response.message);
@@ -83,21 +121,28 @@ export class UserDetailsComponent implements OnInit {
   }
 
   deleteUser(): void {
-  if (confirm('Are you sure you want to delete this user?')) {
-    this.userService.DeleteUser(this.user.id).subscribe(
-      (response) => {
-        if (response.status) {
-          console.log('User deleted successfully');
-          this.navigateToUserList();
-        } else {
-          console.error('Error deleting user:', response.message);
-        }
-      },
-      (error) => {
-        console.error('Error deleting user:', error);
+    SwalAlertComponent.showConfirmationAlert(
+      'Are you sure?',
+      'Are you sure you want to delete this user?',
+      'Yes, delete it!',
+      'No, cancel!'
+    ).then((confirmed) => {
+      if (confirmed) {
+        this.userService.DeleteUser(this.user.id).subscribe(
+          (response) => {
+            if (response.status) {
+              SwalAlertComponent.showAlert("Success", "User deleted successfully", "success");
+              this.navigateToUserList();
+            } else {
+              console.error('Error deleting user:', response.message);
+            }
+          },
+          (error) => {
+            console.error('Error deleting user:', error);
+          }
+        );
       }
-    );
+    });
   }
-}
 
 }
