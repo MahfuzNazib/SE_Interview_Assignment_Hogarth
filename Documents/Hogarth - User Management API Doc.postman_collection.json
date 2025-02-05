@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "8ce43c49-6538-4aa8-8f90-5c33d5357b05",
+		"name": "Hogarth - User Management API Doc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10527534"
+	},
+	"item": [
+		{
+			"name": "GetAllUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "database-type",
+						"value": "{{database-type}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageNumber\": 1,\r\n  \"pageSize\": 10,\r\n  \"searchValue\": \"\",\r\n  \"orderBy\": \"Id\",\r\n  \"isAscending\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseApiUrl}}/User/GetUsers",
+					"host": [
+						"{{BaseApiUrl}}"
+					],
+					"path": [
+						"User",
+						"GetUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "database-type",
+						"value": "{{database-type}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"firstName\": \"Nazib\",\r\n  \"lastName\": \"Mahfuz\",\r\n  \"active\": true,\r\n  \"company\": \"hSenid Bizz\",\r\n  \"sex\": \"M\",\r\n  \"roleId\": 1,\r\n  \"contact\": {\r\n    \"id\": 0,\r\n    \"phone\": \"01777127618\",\r\n    \"address\": \"Uttara\",\r\n    \"city\": \"Dhaka\",\r\n    \"country\": \"Bangladesh\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseApiUrl}}/User/AddUser",
+					"host": [
+						"{{BaseApiUrl}}"
+					],
+					"path": [
+						"User",
+						"AddUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "database-type",
+						"value": "{{database-type}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseApiUrl}}/User/GetUserById/1",
+					"host": [
+						"{{BaseApiUrl}}"
+					],
+					"path": [
+						"User",
+						"GetUserById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "database-type",
+						"value": "{{database-type}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"firstName\": \"Mahfuz\",\r\n  \"lastName\": \"Nazib\",\r\n  \"active\": true,\r\n  \"company\": \"Hogarth\",\r\n  \"sex\": \"M\",\r\n  \"roleId\": 1,\r\n  \"contact\": {\r\n    \"id\": 1,\r\n    \"phone\": \"01841550540\",\r\n    \"address\": \"Nikunja\",\r\n    \"city\": \"Dhaka\",\r\n    \"country\": \"Bangladesh\"\r\n  },\r\n  \"role\": {\r\n    \"id\": 1,\r\n    \"name\": \"Admin\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseApiUrl}}/User/UpdateUser",
+					"host": [
+						"{{BaseApiUrl}}"
+					],
+					"path": [
+						"User",
+						"UpdateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "database-type",
+						"value": "{{database-type}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseApiUrl}}/User/DeleteUser/2",
+					"host": [
+						"{{BaseApiUrl}}"
+					],
+					"path": [
+						"User",
+						"DeleteUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseApiUrl",
+			"value": "https://localhost:7066/api",
+			"type": "string"
+		},
+		{
+			"key": "database-type",
+			"value": "MSSQL",
+			"type": "string"
+		}
+	]
+}
