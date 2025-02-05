@@ -20,7 +20,6 @@
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
-        <th>Sl No</th>
         <th (click)="sortBy('FirstName')">
           First Name
           <span *ngIf="paginationRequest.orderBy === 'FirstName'">
@@ -52,7 +51,6 @@
 
     <tbody>
       <tr *ngFor="let user of users; let i = index">
-        <td>{{ i + 1 }}</td>
         <td>{{ user.firstName }}</td>
         <td>{{ user.lastName || "-" }}</td>
         <td>{{ user.sex }}</td>
